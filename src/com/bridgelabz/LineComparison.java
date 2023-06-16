@@ -23,10 +23,12 @@ public class LineComparison {
         double length2=Math.sqrt(Math.pow((x4-x3),2)+Math.pow((y4-y3),2));
         System.out.println(length2);
 
-        if (length1==length2){
+        if (length1>length2){
+            System.out.println("Length1 is greater than length2");
+        } else if (length1<length2) {
+            System.out.println("Length2 is greater than length1");
+        } else {
             System.out.println("Two lines are equal");
-        }else {
-            System.out.println("Two lines are not equal");
         }
 
     }
